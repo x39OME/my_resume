@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;800&display=swap');
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --fontTitle:'Aboreto', cursive;
+  --fontmain:'Josefin Sans', sans-serif;
+  --fontSec:'Cinzel', serif;
+  --fontText:'Noto Sans', sans-serif;
+  --bgColor: #F7F7F7;
+  --titleColor:#141318;
+  --textColor:#5C5C5C;
+  --lineColor:#BDBDBD;
+  --iconColor:#3A3A3A;
+}
+html{
+  scroll-behavior: smooth;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-weight: 600;
+  font-size: 14px;
+}
+/* Global */
+
+/* Freamwork */
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: var(--bgColor);
+  padding-top: 20px;
+}
+@media(min-width:768px){
+  .container{
+    width: 750px;
+  }
+}
+@media(min-width:992px){
+  .container{
+    width: 970px;
+  }
+}
+@media(min-width:1200px){
+  .container{
+    width: 1170px;
+  }
+}
+.text{
+  font-family: var(--fontText);
+  font-weight: 400;
+  font-size: 13px;
+}
+/* Freamwork */
+/*Start Heading */
+.resume .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resume .title .main{
+  font-family: var(--fontmain);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 15px;
+  font-size: 3.5rem;
+}
+.resume .title .lang{
+  font-weight: 800;
+  font-family: var(--fontmain);
+  cursor: pointer;
+}
+@media print {
+  .resume .title .lang{
+    display:none
+  }
+}
+.resume .job{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 20px 0;
+  align-items: center;
+  border-top: 2px solid #BDBDBD;
+  border-bottom: 2px solid #BDBDBD;
+  font-family:var(--fontTitle);
+  letter-spacing: 5px;
+  text-transform:uppercase;
+  font-size: 14px;
+  font-weight:700;
+}
+.resume .job p{
+  color: var(--titleColor);
+}
+.resume .job a{
+  color: var(--textColor);
+  margin: 0 5px;
+}
+/* End Heading */
+/* Start Section */
+section {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+section div .section-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #BDBDBD;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+section div .section-title i{
+  color: var(--iconColor);
+  border: 1px solid #141318;
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-size: 19px;
+}
+section div .section-title h3{
+  font-family: var(--fontTitle);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.row{
+  width: 33%;
+}
+.education .info{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.education .info .name{
+  width: 25%;
+}
+/* End Section */
