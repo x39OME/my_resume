@@ -143,6 +143,15 @@ section {
   gap: 30px;
   padding-bottom: 10px;
 }
+@media(max-width:767px){
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  .row{
+    width: 100% !important;
+  }
+}
 section div .section-title{
   display: flex;
   align-items: center;
