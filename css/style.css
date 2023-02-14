@@ -76,10 +76,33 @@ p{
   letter-spacing: 15px;
   font-size: 3.5rem;
 }
+@media(max-width:767px){
+  .resume .title .main{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+}
 .resume .title .lang{
+  position: relative;
   font-weight: 800;
   font-family: var(--fontmain);
   cursor: pointer;
+}
+.resume .title .lang::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  background: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: .3s;
+}
+.resume .title .lang:hover::after{
+  width: 100%;
+}
+.resume .title .lang a{
+  color: var(--textColor);
 }
 @media print {
   .resume .title .lang{
@@ -106,6 +129,11 @@ p{
 .resume .job a{
   color: var(--textColor);
   margin: 0 5px;
+}
+@media(max-width:767px){
+  .resume .job{
+    letter-spacing: 2px;
+  }
 }
 /* End Heading */
 /* Start Section */
