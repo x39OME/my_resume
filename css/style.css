@@ -132,6 +132,7 @@ p{
 }
 @media(max-width:767px){
   .resume .job{
+    font-size: 11px;
     letter-spacing: 2px;
   }
 }
@@ -161,6 +162,11 @@ section div .section-title h3{
   font-family: var(--fontTitle);
   text-transform: uppercase;
   font-weight: 700;
+}
+@media(max-width:767px){
+  section div .section-title h3{
+    font-size: 13px;
+  }
 }
 .row{
   width: 33%;
