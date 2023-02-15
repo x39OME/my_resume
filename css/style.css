@@ -61,10 +61,16 @@ p{
   font-family: var(--fontText);
   font-weight: 400;
   font-size: 13px;
-
 }
+
 .text div{
   margin-bottom: 5px;
+}
+.rtl{
+  direction: rtl;
+}
+.ltr{
+  direction: ltr;
 }
 /* Freamwork */
 /*Start Heading */
