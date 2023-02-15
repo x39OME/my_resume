@@ -66,11 +66,8 @@ p{
 .text div{
   margin-bottom: 5px;
 }
-.rtl{
-  direction: rtl;
-}
-.ltr{
-  direction: ltr;
+.text div span i{
+  margin-left: 7px;
 }
 /* Freamwork */
 /*Start Heading */
