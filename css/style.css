@@ -167,13 +167,13 @@ section {
   padding-bottom: 10px;
 }
 @media(max-width:767px){
-  /* section{
+  section{
     display: flex;
     flex-direction: column;
   }
   .row{
     width: 100% !important;
-  } */
+  }
 }
 section div .section-title{
   display: flex;
