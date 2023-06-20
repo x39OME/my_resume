@@ -69,23 +69,28 @@ a{
   font-family: var(--fontSec);
   color: var(--iconColor);
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 800 !important
+}
+.small-title.date{
+  font-size: 9px;
 }
 .text-ar{
   font-family: var(--fontAr);
+  font-weight: 300;
 }
 .text div{
   margin-bottom: 5px;
 }
 .text b{
+  color: var(--titleColor);
   cursor: pointer;
   transition: .3s;
 }
 .text b:hover{
-  color: var(--titleColor);
+  color: var(--lineColor);
 }
 .text div span i{
-  margin-left: 5px;
+  margin-left:5px;
   margin-right:5px;
 }
 /* Freamwork */
@@ -122,18 +127,15 @@ a{
   position: relative;
   font-weight: 800;
   font-family: var(--fontmain);
-  cursor: pointer;
   transition: .3s;
 }
-.resume .title .lang:hover a{
+.resume .title .lang a:hover{
   color: var(--titleColor);
-}
-.resume .title .lang:hover::after{
-  width: 100%;
 }
 .resume .title .lang a{
   color: var(--textColor);
   font-size: 13px;
+  cursor: pointer;
 }
 @media print {
   .resume .title .lang{
@@ -197,13 +199,16 @@ section div .section-title i{
   color: var(--iconColor);
   border: 1px solid #141318;
   border-radius: 50%;
-  padding: 5px 7px;
-  font-size: 19px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section div .section-title h3{
   font-family: var(--fontTitle);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 section div .section-title h3.ar{
   font-family: var(--fontAr);
@@ -224,12 +229,12 @@ section div .section-title h3.ar{
   gap: 15px;
   padding-bottom: 10px;
 }
+.education_experiences_goals .info .name{
+  width: 25%;
+}
 .education_experiences_goals .info.skills{
   margin-bottom: 10px;
   border-bottom:2px solid #BDBDBD;
-}
-.education_experiences_goals .info .name{
-  width: 25%;
 }
 .education_experiences_goals .info .cer .skill{
   display: flex;
@@ -250,11 +255,23 @@ section div .section-title h3.ar{
 }
 .education_experiences_goals .info .cer .skill span.skill-ar{
   font-family: var(--fontAr);
+  font-weight: 300;
 }
 .education_experiences_goals .info .cer .skill span i{
   font-size: 6px;
 }
 .education_experiences_goals .info .cer p i{
   font-size: 6px;
+}
+.education_experiences_goals .info .cer .certficate span{
+  display: block;
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin: 5px;
+  font-size: 11px;
+  font-family: var(--fontSec);
 }
 /* End Section */
