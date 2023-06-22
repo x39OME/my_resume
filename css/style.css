@@ -110,6 +110,7 @@ a{
   align-items: center;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .resume .title .main{
   font-family: var(--fontmain);
