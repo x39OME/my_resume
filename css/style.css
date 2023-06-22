@@ -34,10 +34,8 @@ a{
 .resume{
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: var(--bgColor);
-  padding-top: 15px;
+  padding:20px;
 }
 .resume footer{
   font-size: 6px;
@@ -57,7 +55,7 @@ a{
 }
 @media(min-width:1200px){
   .resume{
-    width: 1170px;
+    width: 1040px;
   }
 }
 .text{
@@ -111,6 +109,7 @@ a{
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-top: 20px;
 }
 .resume .title .main{
   font-family: var(--fontmain);
