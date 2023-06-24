@@ -29,39 +29,33 @@ ul{
 a{
   text-decoration: none;
 }
-/* Global */
 /* Freamwork */
-.resume{
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--bgColor);
-  padding:20px;
-}
-.resume footer{
-  font-size: 6px;
-  font-family: var(--fontAr);
-  display: flex;
-  justify-content: center;
-}
-@media(min-width:768px){
-  .resume{
-    width: 750px;
-  }
-}
-@media(min-width:992px){
-  .resume{
-    width: 970px;
-  }
-}
-@media(min-width:1200px){
-  .resume{
-    width: 1040px;
-  }
+.row{
+  width: 50%;
 }
 .text{
   font-family: var(--fontText);
   color: var(--textColor);
   font-size: 11px;
+}
+.text div{
+  margin-bottom: 5px;
+}
+.text b{
+  color: var(--titleColor);
+  cursor: pointer;
+  transition: .3s;
+}
+.text b:hover{
+  color: var(--lineColor);
+}
+.text div span i{
+  margin-left:5px;
+  margin-right:5px;
+}
+.text-ar{
+  font-family: var(--fontAr);
+  font-weight: 300;
 }
 .small-title{
   font-family: var(--fontSec);
@@ -83,33 +77,31 @@ a{
 .small-title.date{
   font-size: 9px;
 }
-.text-ar{
-  font-family: var(--fontAr);
-  font-weight: 300;
-}
-.text div{
-  margin-bottom: 5px;
-}
-.text b{
-  color: var(--titleColor);
-  cursor: pointer;
-  transition: .3s;
-}
-.text b:hover{
-  color: var(--lineColor);
-}
-.text div span i{
-  margin-left:5px;
-  margin-right:5px;
-}
 /* Freamwork */
+/* Global */
 /*Start Heading */
+.resume{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bgColor);
+  padding:20px;
+}
+@media(min-width:768px){
+  .resume{
+    width: 750px;
+  }
+}
+@media(min-width:992px){
+  .resume{
+    width: 970px;
+  }
+}
 .resume .title{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .resume .title .main{
   font-family: var(--fontmain);
@@ -119,25 +111,40 @@ a{
 }
 .resume .title .download{
   position: absolute;
-  top: -10px;
+  top: -15px;
   font-size: 9px;
+}
+.resume .title button.print{
+  background: none;
+  position: absolute;
+  top: -15px;
+  border: 1px solid var(--textColor);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 9px;
+  cursor: pointer;
 }
 .resume .title .download.en{
   right: 0;
 }
+.resume .title .print.en{
+  right: 60px;
+}
 .resume .title .download.ar{
   left: 0
+}
+.resume .title .print.ar{
+  left: 45px;
+}
+.resume .title .lang{
+  font-weight: 800;
+  font-family: var(--fontmain);
+  transition: .3s;
 }
 @media(max-width:767px){
   .resume .title .main{
     font-size: 1.3rem;
   }
-}
-.resume .title .lang{
-  position: relative;
-  font-weight: 800;
-  font-family: var(--fontmain);
-  transition: .3s;
 }
 .resume .title .lang a:hover{
   color: var(--titleColor);
@@ -154,6 +161,9 @@ a{
   .resume .title .download{
     display: none;
   }
+  .resume .title button.print{
+    display: none;
+  }
 }
 .resume .job{
   display: flex;
@@ -166,6 +176,11 @@ a{
   font-family:var(--fontmain);
   font-size: 14px;
   font-weight:700;
+}
+@media(max-width:767px){
+  .resume .job{
+    font-size: 11px;
+  }
 }
 .resume .job p{
   display: flex;
@@ -181,10 +196,11 @@ a{
   color: var(--textColor);
   margin: 0 5px;
 }
-@media(max-width:767px){
-  .resume .job{
-    font-size: 11px;
-  }
+.resume footer{
+  font-size: 6px;
+  font-family: var(--fontAr);
+  display: flex;
+  justify-content: center;
 }
 /* End Heading */
 /* Start Section */
@@ -214,7 +230,7 @@ section div .section-title{
 }
 section div .section-title i{
   color: var(--iconColor);
-  border: 1px solid var(--titleColor);
+  border: 1px solid var(--iconColor);
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -246,12 +262,6 @@ section div .section-title h3.ar{
     font-size: 13px;
   }
 }
-.row{
-  width: 50%;
-}
-.row-25{
-  width: 25%;
-}
 .education_experiences_goals .info{
   display: flex;
   flex-direction: column;
@@ -262,15 +272,15 @@ section div .section-title h3.ar{
   margin-bottom: 10px;
   border-bottom:2px dotted var(--lineColor);
 }
-.education_experiences_goals .info .cer .skill{
+.education_experiences_goals .info .skill{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.education_experiences_goals .info .cer .skill.ar{
+.education_experiences_goals .info .skill.ar{
   direction: ltr;
 }
-.education_experiences_goals .info .cer .skill span{
+.education_experiences_goals .info .skill span{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,19 +289,19 @@ section div .section-title h3.ar{
   font-size: 11px;
   font-family: var(--fontSec);
 }
-.education_experiences_goals .info .cer .skill span.skill-ar{
+.education_experiences_goals .info .skill span.skill-ar{
   font-family: var(--fontAr);
   font-weight: 300;
 }
-.education_experiences_goals .info .cer .skill span i{
+.education_experiences_goals .info .skill span i{
   font-size: 5px;
   opacity: .7;
 }
-.education_experiences_goals .info .cer p i{
+.education_experiences_goals .info p i{
   font-size: 5px;
   opacity: .7;
 }
-.education_experiences_goals .info .cer .certficate span{
+.education_experiences_goals .info .certficate span{
   display: block;
   display: flex;
   direction: ltr;
