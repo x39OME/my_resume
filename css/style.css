@@ -37,6 +37,7 @@ a{
   font-family: var(--fontText);
   color: var(--textColor);
   font-size: 11px;
+  font-weight: 400;
 }
 .text div{
   margin-bottom: 5px;
@@ -55,7 +56,6 @@ a{
 }
 .text-ar{
   font-family: var(--fontAr);
-  font-weight: 300;
 }
 .small-title{
   font-family: var(--fontSec);
@@ -305,10 +305,8 @@ section div .section-title h3.ar{
   display: flex;
   direction: ltr;
   align-items: center;
-  justify-content: start;
   gap: 5px;
   margin: 5px;
-  font-size: 11px;
   font-family: var(--fontSec);
 }
 /* End Section */
