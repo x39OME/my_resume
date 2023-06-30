@@ -223,7 +223,7 @@ section {
 section div .section-title{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   border-bottom: 2px solid var(--lineColor);
   padding-bottom: 5px;
   margin-bottom: 10px;
