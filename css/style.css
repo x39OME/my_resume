@@ -144,6 +144,9 @@ a{
   transition: .3s;
 }
 @media(max-width:767px){
+.resume .title{
+  height: 75px;
+}
   .resume .title .main{
     font-size: 1.3rem;
   }
