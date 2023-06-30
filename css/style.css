@@ -190,7 +190,6 @@ a{
 }
 .resume .job p i{
   font-size: 5px;
-  opacity: .7;
 }
 .resume .job a{
   color: var(--textColor);
