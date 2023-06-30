@@ -117,7 +117,6 @@ a{
 .resume .title button.print{
   background: none;
   position: absolute;
-  top: -17px;
   border: 1px solid var(--textColor);
   border-radius: 3px;
   padding: 1px 5px;
@@ -128,13 +127,15 @@ a{
   right: 0;
 }
 .resume .title .print.en{
-  right: 65px;
+  right: 68px;
+  top: -17px
 }
 .resume .title .download.ar{
   left: 0
 }
 .resume .title .print.ar{
-  left: 50px;
+  left: 45px;
+  top: -15px;
 }
 .resume .title .lang{
   font-weight: 800;
