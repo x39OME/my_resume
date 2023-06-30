@@ -60,7 +60,7 @@ a{
 .small-title{
   font-family: var(--fontSec);
   color: var(--iconColor);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800 !important
 }
 .small-title.experiences{
