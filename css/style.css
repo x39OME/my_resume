@@ -101,6 +101,7 @@ a{
   justify-content: space-between;
   align-items: center;
   position: relative;
+  height: 120px;
 }
 .resume .title .main{
   font-family: var(--fontmain);
