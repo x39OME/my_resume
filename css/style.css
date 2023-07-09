@@ -200,10 +200,14 @@ a{
   margin: 0 5px;
 }
 .resume footer{
-  font-size: 6px;
-  font-family: var(--fontAr);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  font-size: 9px;
+  font-family: var(--fontAr);
+  padding: 8px;
+  margin: 5px auto;
+  border-top: 3px double var(--lineColor);
+  border-bottom: 3px double var(--lineColor);
 }
 /* End Heading */
 /* Start Section */
@@ -309,7 +313,7 @@ section div .section-title h3.ar{
   direction: ltr;
   align-items: center;
   gap: 5px;
-  margin: 5px;
+  margin: 6px;
   font-family: var(--fontSec);
 }
 /* End Section */
