@@ -174,8 +174,8 @@ a{
   padding:8px;
   margin: 5px auto;
   align-items: center;
-  border-top: 3px double var(--lineColor);
-  border-bottom: 3px double var(--lineColor);
+  border-top: 2px dotted var(--lineColor);
+  border-bottom: 2px dotted var(--lineColor);
   font-family:var(--fontmain);
   font-size: 14px;
   font-weight:700;
@@ -205,8 +205,8 @@ a{
   font-family: var(--fontAr);
   padding: 8px;
   margin: 5px auto;
-  border-top: 3px double var(--lineColor);
-  border-bottom: 3px double var(--lineColor);
+  border-top: 2px dotted var(--lineColor);
+  border-bottom: 2px dotted var(--lineColor);
 }
 /* End Heading */
 /* Start Section */
