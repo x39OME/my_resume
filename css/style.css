@@ -258,7 +258,7 @@ section .address div p i{
 section div .section-title h3{
   font-family: var(--fontTitle);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 section div .section-title h3.ar{
   font-family: var(--fontAr);
