@@ -177,13 +177,8 @@ a{
   border-top: 2px dotted var(--lineColor);
   border-bottom: 2px dotted var(--lineColor);
   font-family:var(--fontmain);
-  font-size: 14px;
+  font-size: 13px;
   font-weight:700;
-}
-@media(max-width:767px){
-  .resume .job{
-    font-size: 11px;
-  }
 }
 .resume .job p{
   display: flex;
