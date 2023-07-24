@@ -72,6 +72,7 @@ a{
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+  margin-bottom: 3px;
 }
 .small-title.date{
   font-size: 9px;
@@ -135,7 +136,7 @@ a{
 .resume .title .download{
   position: absolute;
   top: -15px;
-  font-size: 9px;
+  font-size: 7px;
 }
 .resume .title button.print{
   background: none;
@@ -143,21 +144,21 @@ a{
   border: 1px solid var(--textColor);
   border-radius: 3px;
   padding: 1px 5px;
-  font-size: 9px;
+  font-size: 7px;
   cursor: pointer;
 }
 .resume .title .download.en{
-  right: 0;
+  right: -10px;
 }
 .resume .title .print.en{
-  right: 68px;
-  top: -17px
+  right: 40px;
+  top: -16px
 }
 .resume .title .download.ar{
-  left: 0
+  left: -10px
 }
 .resume .title .print.ar{
-  left: 45px;
+  left: 30px;
   top: -15px;
 }
 .resume .title .lang{
@@ -181,7 +182,7 @@ a{
 }
 .resume .title .lang a{
   color: var(--textColor);
-  font-size: 13px;
+  font-size: 11px;
   cursor: pointer;
   /* text-emphasis: "_" #000; */
 }
@@ -336,6 +337,7 @@ section div .section-title h3.ar{
   align-content: center;
   flex-direction: column;
   gap: 5px;
+  position: relative;
 }
 .education_experiences_goals .language span{
   display: flex;
