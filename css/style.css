@@ -281,6 +281,12 @@ section div .section-title h3.ar{
   font-family: var(--fontAr);
 }
 @media(max-width:767px){
+  .resume .job p{
+    font-size: 10px;
+  }
+  .resume .job a{
+    font-size: 9px;
+  }
   section div .section-title h3{
     font-size: 13px;
   }
