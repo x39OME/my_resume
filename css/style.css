@@ -86,16 +86,6 @@ a{
   background-color: var(--bgColor);
   padding:20px;
 }
-@media(min-width:768px){
-  .resume{
-    width: 750px;
-  }
-}
-@media(min-width:992px){
-  .resume{
-    width: 970px;
-  }
-}
 .resume .title{
   display: flex;
   justify-content: space-between;
@@ -107,6 +97,12 @@ a{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.resume .title .name .main{
+  font-family: var(--fontmain);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size:3rem;
 }
 .resume .title .name .address{
   display: flex;
@@ -121,22 +117,38 @@ a{
   gap: 2px;
   margin-left: 8px;
 }
-.resume .title .name .address .details p{
-  font-size: 13px;
-}
 .resume .title .name .address .details i{
   font-size: 4px;
 }
-.resume .title .name .main{
+.resume .title .name .address .details p{
+  font-size: 13px;
+}
+.resume .title .lang{
+  font-weight: 800;
   font-family: var(--fontmain);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size:3rem;
+  transition: .3s;
+  display: flex;
+  align-self: flex-end;
+}
+.resume .title .lang a{
+  color: var(--textColor);
+  font-size: 13px;
+  cursor: pointer;
+  /* text-emphasis: "_" #000; */
+}
+.resume .title .lang a:hover{
+  color: var(--titleColor);
 }
 .resume .title .download{
   position: absolute;
   top: -15px;
   font-size: 7px;
+}
+.resume .title .download.en{
+  right: -10px;
+}
+.resume .title .download.ar{
+  left: -10px
 }
 .resume .title button.print{
   background: none;
@@ -147,58 +159,13 @@ a{
   font-size: 7px;
   cursor: pointer;
 }
-.resume .title .download.en{
-  right: -10px;
-}
 .resume .title .print.en{
   right: 40px;
   top: -16px
 }
-.resume .title .download.ar{
-  left: -10px
-}
 .resume .title .print.ar{
   left: 30px;
   top: -15px;
-}
-.resume .title .lang{
-  font-weight: 800;
-  font-family: var(--fontmain);
-  transition: .3s;
-}
-@media(max-width:767px){
-.resume .title{
-  height: 90px;
-}
-  .resume .title .name .main{
-    font-size: 1.3rem;
-  }
-  .resume .title .name .address{
-    margin-top: 8px;
-  }
-  .resume .title .name .address .details p{
-    font-size: 9px;
-  }
-}
-.resume .title .lang a{
-  color: var(--textColor);
-  font-size: 11px;
-  cursor: pointer;
-  /* text-emphasis: "_" #000; */
-}
-.resume .title .lang a:hover{
-  color: var(--titleColor);
-}
-@media print {
-  .resume .title .lang{
-    display:none
-  }
-  .resume .title .download{
-    display: none;
-  }
-  .resume .title button.print{
-    display: none;
-  }
 }
 .resume .job{
   display: flex;
@@ -212,28 +179,18 @@ a{
   font-size: 13px;
   font-weight:700;
 }
-.resume .job p{
+.resume .job .specialization{
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--textColor);
 }
-.resume .job p i{
+.resume .job .specialization i{
   font-size: 5px;
 }
 .resume .job a{
   color: var(--textColor);
   margin: 0 5px;
-}
-.resume footer{
-  display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-  font-family: var(--fontAr);
-  padding: 8px;
-  margin: 5px auto;
-  border-top: 2px dotted var(--lineColor);
-  border-bottom: 2px dotted var(--lineColor);
 }
 /* End Heading */
 /* Start Section */
@@ -242,18 +199,7 @@ section {
   gap: 20px;
   padding-bottom: 10px;
 }
-@media screen {
-  @media(max-width:767px) {
-    section{
-      display: flex;
-      flex-direction: column;
-    }
-    .row{
-      width: 100% !important;
-    }
-  }
-}
-section div .section-title{
+section .education_experiences_goals .section-title{
   display: flex;
   align-items: center;
   gap: 5px;
@@ -261,7 +207,7 @@ section div .section-title{
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-section div .section-title i{
+section .education_experiences_goals .section-title i{
   color: var(--iconColor);
   border: 1px solid var(--iconColor);
   border-radius: 50%;
@@ -272,26 +218,15 @@ section div .section-title i{
   align-items: center;
   opacity: .9
 }
-section div .section-title h3{
+section .education_experiences_goals .section-title h3{
   font-family: var(--fontTitle);
   text-transform: uppercase;
   font-weight: 600;
 }
-section div .section-title h3.ar{
+section .education_experiences_goals .section-title h3.ar{
   font-family: var(--fontAr);
 }
-@media(max-width:767px){
-  .resume .job p{
-    font-size: 10px;
-  }
-  .resume .job a{
-    font-size: 9px;
-  }
-  section div .section-title h3{
-    font-size: 13px;
-  }
-}
-.education_experiences_goals .info{
+section .education_experiences_goals .info{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -322,14 +257,6 @@ section div .section-title h3.ar{
   font-family: var(--fontAr);
   font-weight: 300;
 }
-.education_experiences_goals .info .skill span i{
-  font-size: 5px;
-  opacity: .7;
-}
-.education_experiences_goals .info p i{
-  font-size: 5px;
-  opacity: .7;
-}
 .education_experiences_goals .info .certficate span{
   display: flex;
   direction: ltr;
@@ -350,8 +277,80 @@ section div .section-title h3.ar{
   align-items: center;
   gap: 7px;
 }
+.education_experiences_goals .info .skill span i,
+.education_experiences_goals .info p i,
 .education_experiences_goals .language span i{
   font-size: 5px;
   opacity: .7;
 }
 /* End Section */
+/* Footer */
+.resume footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  font-family: var(--fontAr);
+  padding: 8px;
+  margin: 5px auto;
+  border-top: 2px dotted var(--lineColor);
+  border-bottom: 2px dotted var(--lineColor);
+}
+/* Footer */
+/* @Media */
+@media(min-width:768px){
+  .resume{
+    width: 750px;
+  }
+}
+@media(min-width:992px){
+  .resume{
+    width: 970px;
+  }
+}
+@media(max-width:767px){
+  .resume .title{
+    height: 90px;
+  }
+  .resume .title .name .main{
+      font-size: 1.3rem;
+    }
+  .resume .title .name .address{
+      margin-top: 8px;
+    }
+  .resume .title .name .address .details p{
+      font-size: 9px;
+    }
+    .resume .job .specialization{
+      font-size: 10px;
+    }
+    .resume .job a{
+      font-size: 9px;
+    }
+    section div .section-title h3{
+      font-size: 13px;
+    }
+  }
+/* @Media Print */
+@media print {
+  .resume .title .lang{
+    display:none
+  }
+  .resume .title .download{
+    display: none;
+  }
+  .resume .title button.print{
+    display: none;
+  }
+}
+/* @Media Screen */
+@media screen {
+  @media(max-width:767px) {
+    section{
+      display: flex;
+      flex-direction: column;
+    }
+    .row{
+      width: 100% !important;
+    }
+  }
+}
