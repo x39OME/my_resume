@@ -84,7 +84,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bgColor);
-  padding:20px;
+  padding:30px;
 }
 .resume .title{
   display: flex;
@@ -304,7 +304,7 @@ section .education_experiences_goals .info{
 }
 @media(min-width:992px){
   .resume{
-    width: 970px;
+    width: 767px;
   }
 }
 @media(max-width:767px){
