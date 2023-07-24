@@ -59,7 +59,7 @@ a{
 .small-title{
   font-family: var(--fontSec);
   color: var(--iconColor);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800 !important
 }
 .small-title.experiences{
@@ -100,13 +100,37 @@ a{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 120px;
+  height: 140px;
 }
-.resume .title .main{
+.resume .title .name{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.resume .title .name .address{
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume .title .name .address.ar{
+  margin-bottom: 15px;
+}
+.resume .title .name .address .details{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 8px;
+}
+.resume .title .name .address .details p{
+  font-size: 13px;
+}
+.resume .title .name .address .details i{
+  font-size: 4px;
+}
+.resume .title .name .main{
   font-family: var(--fontmain);
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 3rem;
+  font-size:3rem;
 }
 .resume .title .download{
   position: absolute;
@@ -143,19 +167,26 @@ a{
 }
 @media(max-width:767px){
 .resume .title{
-  height: 65px;
+  height: 90px;
 }
-  .resume .title .main{
+  .resume .title .name .main{
     font-size: 1.3rem;
   }
-}
-.resume .title .lang a:hover{
-  color: var(--titleColor);
+  .resume .title .name .address{
+    margin-top: 8px;
+  }
+  .resume .title .name .address .details p{
+    font-size: 9px;
+  }
 }
 .resume .title .lang a{
   color: var(--textColor);
   font-size: 13px;
   cursor: pointer;
+  /* text-emphasis: "_" #000; */
+}
+.resume .title .lang a:hover{
+  color: var(--titleColor);
 }
 @media print {
   .resume .title .lang{
@@ -240,16 +271,6 @@ section div .section-title i{
   align-items: center;
   opacity: .9
 }
-section .address div p{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 5px;
-}
-section .address div p i{
-  font-size: 5px;
-  opacity: .7;
-}
 section div .section-title h3{
   font-family: var(--fontTitle);
   text-transform: uppercase;
@@ -309,5 +330,20 @@ section div .section-title h3.ar{
   gap: 5px;
   margin: 6px;
   font-family: var(--fontSec);
+}
+.education_experiences_goals .language{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.education_experiences_goals .language span{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.education_experiences_goals .language span i{
+  font-size: 5px;
+  opacity: .7;
 }
 /* End Section */
