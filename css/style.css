@@ -84,7 +84,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bgColor);
-  padding:30px;
+  padding:25px;
 }
 .resume .title{
   display: flex;
@@ -304,7 +304,7 @@ section .education_experiences_goals .info{
 }
 @media(min-width:992px){
   .resume{
-    width: 767px;
+    width: 796px;
   }
 }
 @media(max-width:767px){
@@ -318,7 +318,7 @@ section .education_experiences_goals .info{
       margin-top: 8px;
     }
   .resume .title .name .address .details p{
-      font-size: 9px;
+      font-size: 10px;
     }
     .resume .job .specialization{
       font-size: 10px;
