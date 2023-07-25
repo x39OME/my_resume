@@ -104,6 +104,9 @@ a{
   font-weight: 500;
   font-size:3rem;
 }
+.resume .title .name .main.ar{
+  line-height: 1.4;
+}
 .resume .title .name .address{
   display: flex;
   flex-wrap: wrap;
@@ -319,6 +322,9 @@ section .education_experiences_goals .info{
     }
   .resume .title .name .address .details p{
       font-size: 9px;
+    }
+    .resume .title .lang a{
+      font-size: 11px;
     }
     .resume .job .specialization{
       font-size: 10px;
