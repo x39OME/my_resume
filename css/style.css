@@ -137,7 +137,7 @@ a{
   color: var(--textColor);
   font-size: 13px;
   cursor: pointer;
-  /* text-emphasis: "_" #000; */
+  margin-bottom: 6px;
 }
 .resume .title .lang a:hover{
   color: var(--titleColor);
