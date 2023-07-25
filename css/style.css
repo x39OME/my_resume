@@ -173,7 +173,7 @@ a{
 .resume .job{
   display: flex;
   justify-content: space-between;
-  padding:8px;
+  padding:8px 0;
   margin: 5px auto;
   align-items: center;
   border-top: 2px dotted var(--lineColor);
@@ -185,8 +185,11 @@ a{
 .resume .job .specialization{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   color: var(--textColor);
+}
+.resume .job .specialization.ar{
+  font-family: var(--fontAr);
 }
 .resume .job .specialization i{
   font-size: 5px;
@@ -311,6 +314,9 @@ section .education_experiences_goals .info{
   }
 }
 @media(max-width:767px){
+  .resume{
+    padding: 25px 15px;
+  }
   .resume .title{
     height: 90px;
   }
