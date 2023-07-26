@@ -163,11 +163,11 @@ a{
   cursor: pointer;
 }
 .resume .title .print.en{
-  right: 42px;
-  top: -17px
+  right: 0;
+  top: -15px
 }
 .resume .title .print.ar{
-  left: 30px;
+  left: 0;
   top: -15px;
 }
 .resume .job{
