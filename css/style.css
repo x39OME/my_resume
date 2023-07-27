@@ -185,7 +185,7 @@ a{
 .resume .job .specialization{
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
   color: var(--textColor);
 }
 .resume .job .specialization.ar{
@@ -334,6 +334,7 @@ section .education_experiences_goals .info{
     }
     .resume .job .specialization{
       font-size: 10px;
+      gap: 3px;
     }
     .resume .job a{
       font-size: 9px;
