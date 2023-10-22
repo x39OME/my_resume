@@ -32,7 +32,16 @@ a{
 .row{
   width: 50%;
 }
+.row-100{
+  width: 100%;
+}
 .text{
+  font-family: var(--fontText);
+  color: var(--textColor);
+  font-size: 11px;
+  font-weight: 400;
+}
+.text-contact{
   font-family: var(--fontText);
   color: var(--textColor);
   font-size: 11px;
@@ -57,7 +66,7 @@ a{
   font-family: var(--fontAr) !important
 }
 .small-title{
-  font-family: var(--fontSec);
+  /* font-family: var(--fontSec); */
   color: var(--iconColor);
   font-size: 13px;
   font-weight: 800 !important
@@ -118,13 +127,13 @@ a{
   display: flex;
   align-items: center;
   gap: 2px;
-  margin-left: 8px;
+  margin-left: 3px;
 }
 .resume .title .name .address .details i{
   font-size: 4px;
 }
 .resume .title .name .address .details p{
-  font-size: 13px;
+  font-size: 12px;
 }
 .resume .title .lang{
   font-weight: 800;
@@ -213,23 +222,27 @@ section .education_experiences_goals .section-title{
   gap: 5px;
   border-bottom: 2px solid var(--lineColor);
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 section .education_experiences_goals .section-title i{
-  color: var(--iconColor);
-  border: 1px solid var(--iconColor);
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: .9
+  color: var(--iconColor);
+  border: 1px solid var(--iconColor);
+  border-radius: 50%;
+  opacity: .9;
+  width: 26px;
+  height: 26px;
+  font-size: 13px
 }
 section .education_experiences_goals .section-title h3{
+  font-size: 17px;
   font-family: var(--fontTitle);
-  text-transform: uppercase;
   font-weight: 600;
+}
+section .education_experiences_goals .content p.text{
+  margin: 0 7px 10px;
 }
 section .education_experiences_goals .section-title h3.ar{
   font-family: var(--fontAr);
@@ -312,7 +325,7 @@ section .education_experiences_goals .info{
 }
 @media(min-width:992px){
   .resume{
-    width: 796px;
+    width: 881px;
   }
 }
 @media(max-width:767px){
