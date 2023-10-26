@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;800&family=Changa:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400;500;600;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;800&family=Changa:wght@200;500&display&family=Almarai:wght@300;400&display=swap');
 /* Global */
 *{
   margin: 0;
@@ -31,9 +31,6 @@ a{
 /* Freamwork */
 .row{
   width: 50%;
-}
-.row-100{
-  width: 100%;
 }
 .text{
   font-family: var(--fontText);
@@ -114,7 +111,8 @@ a{
   font-size:3rem;
 }
 .resume .title .name .main.ar{
-  line-height: 1.4;
+  line-height: 1.3;
+  font-family: 'Almarai', sans-serif;
 }
 .resume .title .name .address{
   display: flex;
@@ -184,7 +182,7 @@ a{
 .resume .job{
   display: flex;
   justify-content: space-between;
-  padding:8px 0;
+  padding:7px 0;
   margin: 5px auto;
   align-items: center;
   border-top: 2px dotted var(--lineColor);
@@ -198,12 +196,13 @@ a{
   align-items: center;
   gap: 8px;
   color: var(--textColor);
+  font-size: 12px;
 }
 .resume .job .specialization.ar{
   font-family: var(--fontAr);
 }
 .resume .job .specialization i{
-  font-size: 5px;
+  font-size: 4px;
 }
 .resume .job a{
   color: var(--textColor);
@@ -214,7 +213,6 @@ a{
 section {
   display: flex;
   gap: 20px;
-  padding-bottom: 10px;
 }
 section .education_experiences_goals .section-title{
   display: flex;
@@ -251,7 +249,6 @@ section .education_experiences_goals .info{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 10px;
 }
 .education_experiences_goals .info.skills{
   margin-bottom: 10px;
@@ -311,8 +308,8 @@ section .education_experiences_goals .info{
   justify-content: space-between;
   font-size: 9px;
   font-family: var(--fontAr);
-  padding: 8px;
-  margin: 5px auto;
+  padding: 3px;
+  margin: 2px auto;
   border-top: 2px dotted var(--lineColor);
   border-bottom: 2px dotted var(--lineColor);
 }
@@ -348,8 +345,8 @@ section .education_experiences_goals .info{
       font-size: 11px;
     }
     .resume .job .specialization{
-      font-size: 10px;
-      gap: 3px;
+      font-size: 9.5px;
+      gap: 4px;
     }
     .resume .job a{
       font-size: 9px;
@@ -376,9 +373,6 @@ section .education_experiences_goals .info{
     section{
       display: flex;
       flex-direction: column;
-    }
-    .row{
-      width: 100% !important;
     }
   }
 }
