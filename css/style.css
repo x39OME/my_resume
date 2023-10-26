@@ -12,7 +12,6 @@
   --fontText:'Noto Sans', sans-serif;
   --fontAr:'Changa', sans-serif;
   --bgColor: #F7F7F7;
-  --titleColor:#141318;
   --textColor:#5C5C5C;
   --lineColor:#BDBDBD;
   --iconColor:#3A3A3A;
@@ -47,11 +46,6 @@ a{
 .text div{
   margin-bottom: 5px;
 }
-.text b{
-  color: var(--titleColor);
-  cursor: pointer;
-  transition: .3s;
-}
 .text b:hover{
   color: var(--lineColor);
 }
@@ -63,7 +57,6 @@ a{
   font-family: var(--fontAr) !important
 }
 .small-title{
-  /* font-family: var(--fontSec); */
   color: var(--iconColor);
   font-size: 13px;
   font-weight: 800 !important
@@ -146,9 +139,6 @@ a{
   cursor: pointer;
   margin-bottom: 6px;
 }
-.resume .title .lang a:hover{
-  color: var(--titleColor);
-}
 .resume .title button.print,
 .resume .title .download{
   background: none;
@@ -221,6 +211,7 @@ section .education_experiences_goals .section-title{
   border-bottom: 2px solid var(--lineColor);
   padding-bottom: 3px;
   margin:0 0 3px;
+  color: #2C2D2A;
 }
 section .education_experiences_goals .section-title.en{
   margin:5px 0 3px;
@@ -361,6 +352,12 @@ section .education_experiences_goals .info{
   }
 /* @Media Print */
 @media print {
+  .text{
+      font-weight: 300;
+  }
+  .text-ar{
+      font-weight: 400;
+  }
   .resume .title .lang{
     display:none
   }
@@ -369,6 +366,9 @@ section .education_experiences_goals .info{
   }
   .resume .title button.print{
     display: none;
+  }
+  .resume .title .name .main{
+    font-size: 1.8rem;
   }
 }
 /* @Media Screen */
