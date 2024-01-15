@@ -80,10 +80,9 @@ a{
 /* Global */
 /*Start Heading */
 .resume{
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto;
   background-color: var(--bgColor);
-  padding:25px;
+  padding:20px;
 }
 .resume .title{
   display: flex;
@@ -127,17 +126,17 @@ a{
   font-size: 12px;
 }
 .resume .title .lang{
+  display: flex;
+  align-self: flex-end;
   font-weight: 800;
   font-family: var(--fontmain);
   transition: .3s;
-  display: flex;
-  align-self: flex-end;
 }
 .resume .title .lang a{
   color: var(--textColor);
   font-size: 13px;
-  cursor: pointer;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 .resume .title button.print,
 .resume .title .download{
@@ -150,12 +149,10 @@ a{
   cursor: pointer;
 }
 .resume .title .print.en,
-.resume .title .download.en{
-  top: -20px
-}
+.resume .title .download.en,
 .resume .title .print.ar,
 .resume .title .download.ar{
-  top: -20px;
+  top: -15px
 }
 .resume .title .print.en{
   right: 20px;
@@ -184,7 +181,7 @@ a{
 .resume .job .specialization{
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--textColor);
   font-size: 12px;
 }
@@ -208,10 +205,10 @@ section .education_experiences_goals .section-title{
   display: flex;
   align-items: center;
   gap: 5px;
-  border-bottom: 2px solid var(--lineColor);
-  padding-bottom: 3px;
-  margin:0 0 3px;
+  border-bottom: 1.5px solid var(--lineColor);
   color: #2C2D2A;
+  padding-bottom:2px;
+  margin-bottom:1px
 }
 section .education_experiences_goals .section-title.en{
   margin:5px 0 3px;
@@ -229,8 +226,8 @@ section .education_experiences_goals .section-title i{
   font-size: 13px
 }
 section .education_experiences_goals .section-title h3{
-  font-size: 17px;
   font-family: var(--fontTitle);
+  font-size: 17px;
   font-weight: 600;
 }
 section .education_experiences_goals .content p.text{
@@ -238,6 +235,7 @@ section .education_experiences_goals .content p.text{
 }
 section .education_experiences_goals .section-title h3.ar{
   font-family: var(--fontAr);
+  font-size: 16px;
 }
 section .education_experiences_goals .info{
   display: flex;
@@ -262,7 +260,7 @@ section .education_experiences_goals .info{
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 11px;
   font-family: var(--fontSec);
 }
@@ -279,11 +277,12 @@ section .education_experiences_goals .info{
   font-family: var(--fontSec);
 }
 .education_experiences_goals .language{
+  position: relative;
   display: flex;
   align-content: center;
   flex-direction: column;
   gap: 5px;
-  position: relative;
+  padding-bottom: 5px;
 }
 .education_experiences_goals .language span{
   display: flex;
@@ -301,8 +300,8 @@ section .education_experiences_goals .info{
 .resume footer{
   display: flex;
   justify-content: space-between;
-  font-size: 9px;
   font-family: var(--fontAr);
+  font-size: 9px;
   padding: 3px;
   margin: 2px auto;
   border-top: 2px dotted var(--lineColor);
@@ -346,6 +345,9 @@ section .education_experiences_goals .info{
       font-size: 9.5px;
       gap: 4px;
     }
+    .resume .job .specialization i{
+      display: none;
+    }
     .resume .job a{
       font-size: 9px;
     }
@@ -371,7 +373,7 @@ section .education_experiences_goals .info{
     display: none;
   }
   .resume .title .name .main{
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 /* @Media Screen */
