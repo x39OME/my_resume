@@ -71,10 +71,10 @@ a{
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 3px
 }
 .small-title.date{
-  font-size: 9px;
+  font-size: 9px
 }
 /* Freamwork */
 /* Global */
@@ -82,61 +82,61 @@ a{
 .resume{
   margin:0 auto;
   background-color: var(--bgColor);
-  padding:20px;
+  padding:20px
 }
 .resume .title{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 140px;
+  height: 140px
 }
 .resume .title .name{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column
 }
 .resume .title .name .main{
   font-family: var(--fontmain);
   text-transform: uppercase;
   font-weight: 500;
-  font-size:3rem;
+  font-size:3rem
 }
 .resume .title .name .main.ar{
   line-height: 1.3;
-  font-family: 'Almarai', sans-serif;
+  font-family: 'Almarai', sans-serif
 }
 .resume .title .name .address{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .resume .title .name .address.ar{
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 .resume .title .name .address .details{
   display: flex;
   align-items: center;
   gap: 2px;
-  margin-left: 3px;
+  margin-left: 3px
 }
 .resume .title .name .address .details i{
-  font-size: 4px;
+  font-size: 4px
 }
 .resume .title .name .address .details p{
-  font-size: 12px;
+  font-size: 12px
 }
 .resume .title .lang{
   display: flex;
   align-self: flex-end;
   font-weight: 800;
   font-family: var(--fontmain);
-  transition: .3s;
+  transition: .3s
 }
 .resume .title .lang a{
   color: var(--textColor);
   font-size: 13px;
   margin-bottom: 6px;
-  cursor: pointer;
+  cursor: pointer
 }
 .resume .title button.print,
 .resume .title .download{
@@ -146,25 +146,25 @@ a{
   border-radius: 3px;
   padding: 1px 5px;
   font-size: 7px;
-  cursor: pointer;
+  cursor: pointer
 }
 .resume .title .print.en,
 .resume .title .download.en,
 .resume .title .print.ar,
 .resume .title .download.ar{
-  top: -15px
+  top:-15px
 }
 .resume .title .print.en{
-  right: 20px;
+  right:20px
 }
 .resume .title .print.ar{
-  left: 20px;
+  left:20px
 }
 .resume .title .download.en{
-  right: -10px;
+  right:-10px
 }
 .resume .title .download.ar{
-  left: -10px
+  left:-10px
 }
 .resume .job{
   display: flex;
@@ -181,6 +181,7 @@ a{
 .resume .job .specialization{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   color: var(--textColor);
   font-size: 12px;
@@ -344,9 +345,6 @@ section .education_experiences_goals .info{
     .resume .job .specialization{
       font-size: 9.5px;
       gap: 4px;
-    }
-    .resume .job .specialization i{
-      display: none;
     }
     .resume .job a{
       font-size: 9px;
