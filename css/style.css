@@ -321,6 +321,9 @@ section .education_experiences_goals .info{
   }
 }
 @media(max-width:767px){
+  .row{
+    width: 100%;
+  }
   .resume{
     padding: 25px 15px;
   }
