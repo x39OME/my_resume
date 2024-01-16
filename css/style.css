@@ -74,7 +74,10 @@ a{
   margin-bottom: 3px
 }
 .small-title.date{
-  font-size: 9px
+  font-size: 10px
+}
+.small-title.date.ar{
+  direction:rtl;
 }
 /* Freamwork */
 /* Global */
@@ -189,7 +192,13 @@ a{
 .resume .job .specialization.ar{
   font-family: var(--fontAr);
 }
-.resume .job .specialization i{
+.resume .job .specialization p{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+.resume .job .specialization p i{
   font-size: 4px;
 }
 .resume .job a{
@@ -343,11 +352,11 @@ section .education_experiences_goals .info{
       font-size: 11px;
     }
     .resume .job .specialization{
-      font-size: 9.5px;
+      font-size: 11px;
       gap: 4px;
     }
     .resume .job a{
-      font-size: 9px;
+      font-size: 11px;
     }
     section div .section-title h3{
       font-size: 13px;
