@@ -32,10 +32,15 @@ a{
   width: 50%;
 }
 .text{
-  font-family: var(--fontText);
   color: var(--textColor);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
+}
+.text-ar{
+  font-family: var(--fontAr) !important;
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 11px;
 }
 .text-contact{
   font-family: var(--fontText);
@@ -53,9 +58,7 @@ a{
   margin-left:5px;
   margin-right:5px;
 }
-.text-ar{
-  font-family: var(--fontAr) !important
-}
+
 .small-title{
   color: var(--iconColor);
   font-size: 15px;
@@ -352,7 +355,7 @@ section .education_experiences_goals .info.border{
       font-size: 11px;
     }
     .resume .title .lang a{
-      font-size: 11px;
+      font-size: 9px;
     }
     .resume .job .specialization{
       font-size: 11px;
@@ -363,6 +366,9 @@ section .education_experiences_goals .info.border{
     }
     section div .section-title h3{
       font-size: 13px;
+    }
+    .small-title{
+      font-size: 14px;
     }
   }
 /* @Media Print */
