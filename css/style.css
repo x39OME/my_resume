@@ -371,7 +371,8 @@ section .education_experiences_goals .info.border{
       font-size: 11px;
     }
     .text{
-      font-size: 10px;
+      font-size: 12px;
+      font-family: var(--fontmain);
     }
   }
 /* @Media Print */
