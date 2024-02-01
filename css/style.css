@@ -58,7 +58,7 @@ a{
 }
 .small-title{
   color: var(--iconColor);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800 !important
 }
 .small-title.experiences{
@@ -111,10 +111,7 @@ a{
 }
 .resume .title .name .address{
   display: flex;
-  flex-wrap: wrap
-}
-.resume .title .name .address.ar{
-  margin-bottom: 15px
+  flex-wrap: wrap;
 }
 .resume .title .name .address .details{
   display: flex;
@@ -217,8 +214,8 @@ section .education_experiences_goals .section-title{
   gap: 5px;
   border-bottom: 1.5px solid var(--lineColor);
   color: #2C2D2A;
-  padding-bottom:2px;
-  margin-bottom:1px
+  padding-bottom:4px;
+  margin-bottom:4px
 }
 section .education_experiences_goals .section-title.en{
   margin:5px 0 3px;
@@ -237,7 +234,7 @@ section .education_experiences_goals .section-title i{
 }
 section .education_experiences_goals .section-title h3{
   font-family: var(--fontTitle);
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 600;
 }
 section .education_experiences_goals .content p.text{
@@ -245,12 +242,17 @@ section .education_experiences_goals .content p.text{
 }
 section .education_experiences_goals .section-title h3.ar{
   font-family: var(--fontAr);
-  font-size: 16px;
+  font-size: 18px;
 }
 section .education_experiences_goals .info{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+section .education_experiences_goals .info.border{
+  padding-bottom: 5px;
+  margin-top: 5px;
+  border-bottom: 2px dotted var(--lineColor);
 }
 .education_experiences_goals .info.skills{
   margin-bottom: 5px;
@@ -326,7 +328,8 @@ section .education_experiences_goals .info{
 }
 @media(min-width:992px){
   .resume{
-    width: 881px;
+    width: 776px;
+    height: 100%;
   }
 }
 @media(max-width:767px){
