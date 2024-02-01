@@ -370,6 +370,9 @@ section .education_experiences_goals .info.border{
     .small-title{
       font-size: 14px;
     }
+    .text{
+      font-size: 11px;
+    }
   }
 /* @Media Print */
 @media print {
