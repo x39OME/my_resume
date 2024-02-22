@@ -364,7 +364,7 @@ section .education_experiences_goals .info.border{
     .resume .job a{
       font-size: 11px;
     }
-    section div .section-title h3{
+    section .education_experiences_goals .section-title h3{
       font-size: 12px;
     }
     .small-title{
