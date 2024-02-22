@@ -365,7 +365,10 @@ section .education_experiences_goals .info.border{
       font-size: 11px;
     }
     section .education_experiences_goals .section-title h3{
-      font-size: 12px;
+      font-size: 16px;
+    }
+    section .education_experiences_goals .section-title{
+      margin-top:10px;
     }
     .small-title{
       font-size: 11px;
