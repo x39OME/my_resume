@@ -33,20 +33,24 @@ a{
 }
 .text{
   color: var(--textColor);
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.textLang{
+  color: var(--textColor);
+  font-size: 16px;
   font-weight: 400;
 }
 .text-ar{
-  font-family: var(--fontAr) !important;
-  color: var(--textColor);
+  /* font-family: var(--fontAr) !important; */
   font-weight: 400;
-  font-size: 11px;
+  font-size: 15px;
+  color: var(--iconColor);
+  margin-right: 20px;
 }
 .text-contact{
   font-family: var(--fontText);
-  color: var(--textColor);
-  font-size: 11px;
-  font-weight: 400;
 }
 .text div{
   margin-bottom: 5px;
@@ -58,29 +62,26 @@ a{
   margin-left:5px;
   margin-right:5px;
 }
-
 .small-title{
   color: var(--iconColor);
-  font-size: 15px;
   font-weight: 800 !important
 }
-.small-title.experiences{
+.small-title.text-p{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
 }
-.small-title.experiences p{
+.small-title.text-p p{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  margin-bottom: 3px
+  margin: 4px 0
 }
 .small-title.date{
-  font-size: 10px
-}
-.small-title.date.ar{
-  direction:rtl;
+  font-size: 12px;
+  margin-bottom: 3px;
 }
 /* Freamwork */
 /* Global */
@@ -91,125 +92,77 @@ a{
   padding:20px
 }
 .resume .title{
+  position: relative;
+  height: 120px
+}
+.resume .title .head{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 140px
 }
 .resume .title .name{
   display: flex;
   justify-content: center;
   flex-direction: column
 }
+.resume .title .name .myname{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.resume .title .name .myname span{
+  font-size: 18px;
+}
+.resume .title .name .myname span.ar{
+  font-family: var(--fontAr);
+}
 .resume .title .name .main{
   font-family: var(--fontmain);
   text-transform: uppercase;
   font-weight: 500;
-  font-size:3rem
+  font-size:2rem;
+  text-align: center;
 }
-.resume .title .name .main.ar{
+.resume .title .name .main span{
+  font-size: 1rem;
+}
+.resume .title .name .myname .main.ar{
   line-height: 1.3;
   font-family: 'Almarai', sans-serif
 }
 .resume .title .name .address{
   display: flex;
-  flex-wrap: wrap;
-}
-.resume .title .name .address .details{
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 2px;
-  margin-left: 3px
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 .resume .title .name .address .details i{
   font-size: 4px
 }
 .resume .title .name .address .details p{
-  font-size: 13px
-}
-.resume .title .lang{
   display: flex;
-  align-self: flex-end;
-  font-weight: 800;
-  font-family: var(--fontmain);
-  transition: .3s
+  justify-content: center;
+  align-content: center;
+  font-size: 14px;
+  gap:5px
 }
-.resume .title .lang a{
-  color: var(--textColor);
-  font-size: 13px;
-  margin-bottom: 6px;
-  cursor: pointer
-}
-.resume .title button.print,
-.resume .title .download{
-  background: none;
-  position: absolute;
-  border: 1px solid var(--textColor);
-  border-radius: 3px;
-  padding: 1px 5px;
-  font-size: 7px;
-  cursor: pointer
-}
-.resume .title .print.en,
-.resume .title .download.en,
-.resume .title .print.ar,
-.resume .title .download.ar{
-  top:-15px
-}
-.resume .title .print.en{
-  right:20px
-}
-.resume .title .print.ar{
-  left:20px
-}
-.resume .title .download.en{
-  right:-10px
-}
-.resume .title .download.ar{
-  left:-10px
-}
-.resume .job{
-  display: flex;
-  justify-content: space-between;
-  padding:7px 0;
-  margin: 5px auto;
-  align-items: center;
-  border-top: 2px dotted var(--lineColor);
-  border-bottom: 2px dotted var(--lineColor);
-  font-family:var(--fontmain);
-  font-size: 13px;
-  font-weight:700;
-}
-.resume .job .specialization{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-  color: var(--textColor);
-  font-size: 12px;
-}
-.resume .job .specialization.ar{
-  font-family: var(--fontAr);
-}
-.resume .job .specialization p{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-
-}
-.resume .job .specialization p i{
-  font-size: 4px;
-}
-.resume .job a{
-  color: var(--textColor);
-  margin: 0 5px;
+.resume .title .name .address .details p i{
+  font-size: 16px;
+  color: var(--iconColor);
+  opacity: .7;
 }
 /* End Heading */
 /* Start Section */
 section {
   display: flex;
   gap: 20px;
+}
+section .education_experiences_goals{
+  width: 100%;
 }
 section .education_experiences_goals .section-title{
   display: flex;
@@ -231,13 +184,13 @@ section .education_experiences_goals .section-title i{
   border: 1px solid var(--iconColor);
   border-radius: 50%;
   opacity: .9;
-  width: 26px;
-  height: 26px;
-  font-size: 13px
+  width: 23px;
+  height: 23px;
+  font-size: 11px
 }
 section .education_experiences_goals .section-title h3{
   font-family: var(--fontTitle);
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
 }
 section .education_experiences_goals .content p.text{
@@ -252,62 +205,8 @@ section .education_experiences_goals .info{
   flex-direction: column;
   gap: 10px;
 }
-section .education_experiences_goals .info.border{
-  padding-bottom: 5px;
-  margin-top: 5px;
-  border-bottom: 2px dotted var(--lineColor);
-}
-.education_experiences_goals .info.skills{
-  margin-bottom: 5px;
-  border-bottom:2px dotted var(--lineColor);
-}
-.education_experiences_goals .info .skill{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: 4px;
-}
-.education_experiences_goals .info .skill.ar{
-  direction: ltr;
-}
-.education_experiences_goals .info .skill span{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  margin-left: 15px;
-  font-size: 11px;
-  font-family: var(--fontSec);
-}
-.education_experiences_goals .info .skill span.skill-ar{
-  font-family: var(--fontAr);
-  font-weight: 300;
-}
-.education_experiences_goals .info .certficate span{
-  display: flex;
-  direction: ltr;
-  align-items: center;
-  gap: 5px;
-  margin: 6px;
-  font-family: var(--fontSec);
-}
-.education_experiences_goals .language{
-  position: relative;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  gap: 5px;
-  padding-bottom: 5px;
-}
-.education_experiences_goals .language span{
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.education_experiences_goals .info .skill span i,
-.education_experiences_goals .info p i,
-.education_experiences_goals .language span i{
-  font-size: 5px;
+.education_experiences_goals .info p i{
+  font-size: 6px;
   opacity: .7;
 }
 /* End Section */
@@ -331,7 +230,7 @@ section .education_experiences_goals .info.border{
 }
 @media(min-width:992px){
   .resume{
-    width: 776px;
+    width: 881px;
     height: 100%;
   }
 }
@@ -346,37 +245,37 @@ section .education_experiences_goals .info.border{
     height: 90px;
   }
   .resume .title .name .main{
-      font-size: 1.3rem;
-    }
+    font-size: 1.3rem;
+  }
   .resume .title .name .address{
-      margin-top: 8px;
-    }
+    margin-top: 8px;
+  }
   .resume .title .name .address .details p{
       font-size: 11px;
-    }
-    .resume .title .lang a{
-      font-size: 9px;
-    }
-    .resume .job .specialization{
-      font-size: 11px;
-      gap: 4px;
-    }
+  }
+  .resume .title .lang a{
+    font-size: 9px;
+  }
+  .resume .job .specialization{
+    font-size: 11px;
+    gap: 4px;
+  }
     .resume .job a{
       font-size: 11px;
-    }
-    section .education_experiences_goals .section-title h3{
-      font-size: 16px;
-    }
+  }
+  section .education_experiences_goals .section-title h3{
+    font-size: 16px;
+  }
     section .education_experiences_goals .section-title{
-      margin-top:10px;
-    }
-    .small-title{
-      font-size: 11px;
-    }
-    .text{
-      font-size: 12px;
-      font-family: var(--fontmain);
-    }
+    margin-top:10px;
+  }
+  .small-title{
+    font-size: 11px;
+  }
+  .text{
+    font-size: 12px;
+    font-family: var(--fontmain);
+  }
   }
 /* @Media Print */
 @media print {
