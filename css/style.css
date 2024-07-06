@@ -43,9 +43,8 @@ a{
   font-weight: 400;
 }
 .text-ar{
-  /* font-family: var(--fontAr) !important; */
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--iconColor);
   margin-right: 20px;
 }
@@ -83,21 +82,37 @@ a{
   font-size: 12px;
   margin-bottom: 3px;
 }
+.margin-top.en{
+  margin-top: 20px;
+}
 /* Freamwork */
 /* Global */
 /*Start Heading */
 .resume{
   margin:0 auto;
   background-color: var(--bgColor);
-  padding:20px
+  padding:20px;
 }
-.resume .title{
-  position: relative;
-  height: 120px
-}
+
 .resume .title .head{
   display: flex;
   justify-content: space-between;
+}
+.resume .title .head .lang a,
+.resume .title .head .pdf a,
+.resume .title .head .pdf button {
+  font-size: 11px;
+  font-weight: 800;
+  font-family: var(--fontAr);
+  border: 1px solid var(--lineColor);
+  border-radius: 5px;
+  padding: 0 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.resume .title .head .pdf{
+  display: flex;
+  gap: 4px;
 }
 .resume .title .name{
   display: flex;
@@ -112,7 +127,7 @@ a{
   text-align: center;
 }
 .resume .title .name .myname span{
-  font-size: 18px;
+  font-size: 21px;
 }
 .resume .title .name .myname span.ar{
   font-family: var(--fontAr);
@@ -121,24 +136,23 @@ a{
   font-family: var(--fontmain);
   text-transform: uppercase;
   font-weight: 500;
-  font-size:2rem;
+  font-size:2.5rem;
   text-align: center;
 }
-.resume .title .name .main span{
-  font-size: 1rem;
-}
 .resume .title .name .myname .main.ar{
-  line-height: 1.3;
+  line-height: 1;
   font-family: 'Almarai', sans-serif
 }
 .resume .title .name .address{
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.resume .title .name .address.ar{
+  margin-top: 0;
 }
 .resume .title .name .address .details i{
   font-size: 4px
@@ -225,13 +239,12 @@ section .education_experiences_goals .info{
 /* @Media */
 @media(min-width:768px){
   .resume{
-    width: 750px;
+    width: 746px;
   }
 }
 @media(min-width:992px){
   .resume{
     width: 881px;
-    height: 100%;
   }
 }
 @media(max-width:767px){
@@ -239,19 +252,13 @@ section .education_experiences_goals .info{
     width: 100%;
   }
   .resume{
-    padding: 25px 15px;
-  }
-  .resume .title{
-    height: 90px;
+    padding: 15px 10px;
   }
   .resume .title .name .main{
-    font-size: 1.3rem;
-  }
-  .resume .title .name .address{
-    margin-top: 8px;
+    font-size: 1.5rem;
   }
   .resume .title .name .address .details p{
-      font-size: 11px;
+    font-size: 11px;
   }
   .resume .title .lang a{
     font-size: 9px;
@@ -260,13 +267,13 @@ section .education_experiences_goals .info{
     font-size: 11px;
     gap: 4px;
   }
-    .resume .job a{
-      font-size: 11px;
+  .resume .job a{
+    font-size: 11px;
   }
   section .education_experiences_goals .section-title h3{
     font-size: 16px;
   }
-    section .education_experiences_goals .section-title{
+  section .education_experiences_goals .section-title{
     margin-top:10px;
   }
   .small-title{
@@ -276,7 +283,13 @@ section .education_experiences_goals .info{
     font-size: 12px;
     font-family: var(--fontmain);
   }
+  .text-ar{
+    font-size: 12px;
   }
+  .margin-top{
+    margin-top: 35px;
+  }
+}
 /* @Media Print */
 @media print {
   .text{
@@ -294,8 +307,24 @@ section .education_experiences_goals .info{
   .resume .title button.print{
     display: none;
   }
-  .resume .title .name .main{
-    font-size: 2rem;
+  .margin-top{
+    margin-top: 20px;
+  }
+  .text-ar{
+    font-size: 12px;
+  }
+  .resume .title .name .myname .main.ar{
+    font-size: 1.5rem;
+  }
+  section .education_experiences_goals .section-title.ar{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  section .education_experiences_goals .section-title h3.ar{
+    font-size: 16px;
+  }
+  .resume.ar{
+    padding: 0;
   }
 }
 /* @Media Screen */
